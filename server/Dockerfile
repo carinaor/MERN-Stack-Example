@@ -9,6 +9,9 @@ COPY yarn.lock ./
 ADD db /app/db
 ADD routes /app/routes
 
+RUN apt-get update
+RUN apt-get upgrade
+RUN docker info
 RUN yarn install --production
 
 CMD node server.js
