@@ -2,6 +2,7 @@ FROM node:16-alpine
 
 RUN apk update
 RUN apk upgrade
+LABEL maintainer="carinadel <carinadel@pm.me>"
 
 WORKDIR /app
 
