@@ -1,7 +1,7 @@
 FROM node:16-alpine
 
-RUN apt-get update
-RUN apt-get upgrade
+RUN apk update
+RUN apk upgrade
 RUN docker info
 
 WORKDIR /app
